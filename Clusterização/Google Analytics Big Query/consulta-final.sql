@@ -22,3 +22,5 @@ FROM
 GROUP BY fullVisitorId # Agrupado por cliente
 HAVING qtde_transacoes > 0 # Como queremos usuários QUE CONVERTERAM, podemos remover as transações = 0 após o agrupamento, assim conseguimos saber o total de sessões daquele usuário
 ORDER BY soma_receitas DESC; # Ordenação decrescente por receita (soma)
+
+# Autor: Guilherme Henrique Garcia Elias
