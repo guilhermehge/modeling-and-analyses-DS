@@ -136,6 +136,6 @@ Após a análise exploratória, terminamos com 36 variáveis para modelagem, ela
 * Vacina de Gripe
 * Fez uso de Antiviral.
 
-**Detalhes sobre as modelagens estarão no README.md da pasta de Modelagem**
+**Detalhes sobre as modelagens estarão no README.md da [pasta de Modelagem e Tratamento](https://github.com/guilhermehge/Analises-e-modelagens-Data-Science/tree/main/Classifica%C3%A7%C3%A3o/Trabalho%20de%20conclus%C3%A3o%20de%20curso%20--%20MBA/Modelagem%20e%20Tratamento)**
 
 **Mais detalhes sobre a análise podem ser encontrados na apresentação em PowerPoint [TCC-FIA-GuilhermeElias.pptx](https://github.com/guilhermehge/Analises-e-modelagens-Data-Science/blob/main/Classifica%C3%A7%C3%A3o/Trabalho%20de%20conclus%C3%A3o%20de%20curso%20--%20MBA/Apresenta%C3%A7%C3%A3o%20PowerPoint/TCC-FIA-GuilhermeElias.pptx)**. A apresentação ainda não é final pois o projeto ainda não está 100% pronto e há mais uma etapa de entrega.
