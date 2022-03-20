@@ -2,6 +2,8 @@
 
 ## Modelagem e tratamento das variáveis
 
+### Modelagens Iniciais
+
 Comecei fazendo a modelagem pela modelagem estatística. Inicialmente fiz a modelagem utilizando as variáveis "Idade" e "Tempo de alta ou óbito" como numéricas e todas as outras variáveis como categóricas ou dummies. Além disso, nesta etapa, ainda não havia removido os ignorados e nulos da base. Notebook em questão: [Modelagem_2020_2021-arvore.ipynb](https://github.com/guilhermehge/Analises-e-modelagens-Data-Science/blob/main/Classifica%C3%A7%C3%A3o/Trabalho%20de%20conclus%C3%A3o%20de%20curso%20--%20MBA/Modelagem%20e%20Tratamento/Modelagens%20iniciais/Modelagem_2020_2021-arvore.ipynb)
 
 A base utilizada neste notebook está no [link](https://drive.google.com/file/d/1Zz1AvOq5OvluWcqoCJyTUPyxfyYhjrOK/view?usp=sharing).
@@ -19,5 +21,9 @@ O feature importance do modelo base então foi:
 ![feature_importance2](feat_import_idade_tempo_cat.png)
 
 Observa-se que agora temos idosos com alta importância e o tempo de alta ou óbito diminuiu sua importância, o que confirma o viés da alta cardinalidade das variáveis. Apesar de ser uma evolução, ainda conseguimos ver categorias de "Ignorado" no gráfico, o que dificulta a interpretabilidade do modelo. O restante do notebook segue na mesma linha do anterior.
+
+### Modelagens Finais
+
+
 
 
