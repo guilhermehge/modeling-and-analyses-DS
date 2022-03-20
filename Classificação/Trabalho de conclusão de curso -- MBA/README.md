@@ -5,9 +5,9 @@ A proposta do TCC de analytics da FIA é criar um estudo com modelagem estatíst
 A base de 2020 pode ser obtida [através deste link](https://opendatasus.saude.gov.br/dataset/srag-2020) e a base de 2021 pode ser obtida [aqui](https://opendatasus.saude.gov.br/dataset/srag-2021-e-2022). As bases são atualizadas periodicamente e, nem sempre, conseguimos baixar a mesma base que estamos trabalhando.
 
 ### Os objetivos do trabalho são:
-	1. Identificar o que não pode faltar na triagem de um paciente com suspeita de SRAG, como sintomas, morbidades, entre outros;
-	2. Entender como a COVID-19 impactou nos diagnósticos, número de casos, principais sintomas e óbitos da SRAG no Brasil e identificar a 	probabilidade de óbito e seus principais fatores de influência;
-	3. Entender a evolução de um paciente que dá entrada em uma unidade do SUS com SRAG.
+* Identificar o que não pode faltar na triagem de um paciente com suspeita de SRAG, como sintomas, morbidades, entre outros;
+* Entender como a COVID-19 impactou nos diagnósticos, número de casos, principais sintomas e óbitos da SRAG no Brasil e identificar a probabilidade de óbito e seus principais fatores de influência;
+* Entender a evolução de um paciente que dá entrada em uma unidade do SUS com SRAG.
 
 ### A contextualização do problema é:
 
@@ -26,13 +26,13 @@ As bases inicialmente possuíam 162 colunas e, juntas, 2.825.170 registros. Apó
 Os filtros aplicados foram:
 ![filtros](filtros_base_datasus.png)
 
-Gostaria de comentar sobre o filtro que mais excluiu variáveis, o de remoção de "Ignorados" e "Nulos". A base veio com uma documentação (Dicionario-2020.pdf e Dicionario-2021.pdf) que explicava o que cada variável representava e seus possíveis resultados. Para muitas, tínhamos 1 para Sim, 2 para Não e 9 para Ignorado, porém tínhamos mais uma categoria especial, o valor NULO. Com o objetivo de tratar os dados, tentei por muito tempo tentar entender o que o ignorado e o nulo poderiam significar, porém não tinha contato com o time de negócios. Um dos testes que fiz segue na imagem abaixo:
+Gostaria de comentar sobre o filtro que mais excluiu variáveis, o de remoção de "Ignorados" e "Nulos". A base veio com uma documentação, [Dicionario-2020.pdf](https://github.com/guilhermehge/Analises-e-modelagens-Data-Science/blob/main/Classifica%C3%A7%C3%A3o/Trabalho%20de%20conclus%C3%A3o%20de%20curso%20--%20MBA/Dicion%C3%A1rios%20das%20vari%C3%A1veis%20das%20bases/Dicionario-2020.pdf) e [Dicionario-2021.pdf](https://github.com/guilhermehge/Analises-e-modelagens-Data-Science/blob/main/Classifica%C3%A7%C3%A3o/Trabalho%20de%20conclus%C3%A3o%20de%20curso%20--%20MBA/Dicion%C3%A1rios%20das%20vari%C3%A1veis%20das%20bases/Dicionario-2021.pdf), que explica o que cada variável representa e seus possíveis resultados. Para muitas, temos 1 para Sim, 2 para Não e 9 para Ignorado, porém temos mais uma categoria especial, o valor NULO. Com o objetivo de tratar os dados, tentei por muito tempo tentar entender o que o ignorado e o nulo poderiam significar, porém não tenho contato com o time de negócios. Um dos testes que fiz segue na imagem abaixo:
 
 ![teste_ig_null](teste_ig_null.png)
 
 Neste teste cruzei algumas variáveis (trouxe apenas duas na imagem) com a variável resposta para ver a proporção de óbito de cada categoria da variável. Neste caso: 1 - Sim, 2 - Não, 9 - Ignorado e 30 - Nulo. Podemos observar que, na variável "PERDA_OLFT" há mais óbitos nas categorias de "Nulo" e "Ignorado" que na categoria de "Sim", o que é contraintuitivo e pode bagunçar o modelo final. Já na variável "CARDIOPATI" observa-se que a proporção de óbitos entre "Sim" e "Ignorado" é semelhante, o que também é confuso. Por isso, decidi por eliminar todos os valores "Ignorados" e "Nulos" de todas as variáveis, o que resultou num encolhimento de mais de 90% da base inicial.
 
-O tratamento das variáveis pré-eliminação dos nulos e ignorados está no notebook (Tratamento_variaveis_2020_2021.ipynb).
+O tratamento das variáveis pré-eliminação dos nulos e ignorados está no notebook [Tratamento_variaveis_2020_2021.ipynb](https://github.com/guilhermehge/Analises-e-modelagens-Data-Science/blob/main/Classifica%C3%A7%C3%A3o/Trabalho%20de%20conclus%C3%A3o%20de%20curso%20--%20MBA/Modelagem%20e%20Tratamento/Tratamento_variaveis_2020_2021.ipynb).
 
 As variáveis pós-tratamento são, por categoria:
 
@@ -138,4 +138,4 @@ Após a análise exploratória, terminamos com 36 variáveis para modelagem, ela
 
 **Detalhes sobre as modelagens estarão no README.md da pasta de Modelagem**
 
-**Mais detalhes sobre a análise podem ser encontrados na apresentação em PowerPoint [TCC-FIA-GuilhermeElias.pptx]**. A apresentação ainda não é final pois o projeto ainda não está 100% pronto e há mais uma etapa de entrega.
+**Mais detalhes sobre a análise podem ser encontrados na apresentação em PowerPoint [TCC-FIA-GuilhermeElias.pptx](https://github.com/guilhermehge/Analises-e-modelagens-Data-Science/blob/main/Classifica%C3%A7%C3%A3o/Trabalho%20de%20conclus%C3%A3o%20de%20curso%20--%20MBA/Apresenta%C3%A7%C3%A3o%20PowerPoint/TCC-FIA-GuilhermeElias.pptx)**. A apresentação ainda não é final pois o projeto ainda não está 100% pronto e há mais uma etapa de entrega.
