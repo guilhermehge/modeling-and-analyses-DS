@@ -1,5 +1,5 @@
-# Analises-e-modelagens-Data-Science
+# Data Science - Modelling and Analyses
 
-Repositório para armazenar as análises e modelagens que faço.
+Repo to store the analyses and modelling that I eventually do.
 
-Cada uma das pastas traz um tipo de modelagem.
+Each folder brings a type of modelling or analysis.
