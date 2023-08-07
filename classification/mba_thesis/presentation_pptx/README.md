@@ -1,5 +1,5 @@
-# Trabalho de Conclusão de Curso -- MBA Analytics Data Science FIA
+# MBA Final Thesis - Trabalho de Conclusão de Curso
 
-Apresentação enviada para a FIA.
+Final presentation in powerpoint.
 
-O trabalho ainda não é final, mas a apresentação já traz grande parte do que foi trabalhado.
+Apresentação final em powerpoint.

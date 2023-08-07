@@ -4,6 +4,8 @@
 
 The proposal of the FIA analytics final thesis is to create a study with statistical modeling (logistic regression, linear, among others) and machine learning modeling (more complex models such as xgboost, lightgbm, among others) to try to solve a problem. To do so, we need to choose a public database, which should not be a competition database, or a private one from your own company, to set up the study. In my case, I chose the SARS (Severe Acute Respiratory Syndrome) databases from DataSUS that show the evolution of the disease in 2020 and 2021 together with COVID data.
 
+_All the notebooks and presentations are in portuguese, since the work was presented in a brazilian educational instituion._
+
 The 2020 database can be obtained [through this link](https://opendatasus.saude.gov.br/dataset/srag-2020) and the 2021 database can be obtained [here](https://opendatasus.saude.gov.br/dataset/srag-2021-a-2023). The databases are updated periodically and we are not always able to download the same base we are working on.
 
 ### The goals of the assignment are:
