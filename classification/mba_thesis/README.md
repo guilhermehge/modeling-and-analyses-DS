@@ -33,7 +33,7 @@ I would like to comment on the filter that excluded the most variables, that of 
 
 In this test I crossed some variables (I brought only two in the image) with the response variable to see the proportion of death of each category of the variable. In this case: 1 - Yes, 2 - No, 9 - Ignored and 30 - Null. We can observe that, in the variable " PERDA_OLFT" there are more deaths in the categories of "Null" and "Ignored" than in the category of "Yes", which is counterintuitive and can mess up the final model. In the variable "CARDIOPATI", the proportion of deaths between "Yes" and " Ignored" is similar, which is also confusing. Therefore, I decided to eliminate all "Ignored" and "Null" values from all variables, which resulted in a shrinkage of more than 90% of the initial database.
 
-The treatment of variables pre-elimination of nulls and ignored is in the notebook [Treatment_variables_2020_2021.ipynb](https://github.com/guilhermehge/modeling-and-analyses-DS/blob/main/classification/mba_thesis/data_cleaning_and_modelling/Tratamento_variaveis_2020_2021.ipynb).
+The treatment of variables pre-elimination of nulls and ignored is in the notebook [variable_treatment_2020_2021.ipynb](https://github.com/guilhermehge/modeling-and-analyses-DS/blob/main/classification/mba_thesis/data_cleaning_and_modeling/variable_treatment_2020_2021.ipynb).
 
 Post-treatment variables are, by category:
 
@@ -178,7 +178,7 @@ Gostaria de comentar sobre o filtro que mais excluiu variáveis, o de remoção 
 
 Neste teste cruzei algumas variáveis (trouxe apenas duas na imagem) com a variável resposta para ver a proporção de óbito de cada categoria da variável. Neste caso: 1 - Sim, 2 - Não, 9 - Ignorado e 30 - Nulo. Podemos observar que, na variável "PERDA_OLFT" há mais óbitos nas categorias de "Nulo" e "Ignorado" que na categoria de "Sim", o que é contraintuitivo e pode bagunçar o modelo final. Já na variável "CARDIOPATI" observa-se que a proporção de óbitos entre "Sim" e "Ignorado" é semelhante, o que também é confuso. Por isso, decidi por eliminar todos os valores "Ignorados" e "Nulos" de todas as variáveis, o que resultou num encolhimento de mais de 90% da base inicial.
 
-O tratamento das variáveis pré-eliminação dos nulos e ignorados está no notebook [Tratamento_variaveis_2020_2021.ipynb](https://github.com/guilhermehge/modeling-and-analyses-DS/blob/main/classification/mba_thesis/data_cleaning_and_modelling/Tratamento_variaveis_2020_2021.ipynb).
+O tratamento das variáveis pré-eliminação dos nulos e ignorados está no notebook [variable_treatment_2020_2021.ipynb](https://github.com/guilhermehge/modeling-and-analyses-DS/blob/main/classification/mba_thesis/data_cleaning_and_modeling/variable_treatment_2020_2021.ipynb).
 
 As variáveis pós-tratamento são, por categoria:
 
