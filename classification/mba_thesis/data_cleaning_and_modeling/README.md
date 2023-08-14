@@ -93,6 +93,8 @@ The results of the model were:
 
 Results close to those of the decision tree. As the tree is a model with better interpretability, it is preferable to logistic regression from a business point of view.
 
+_**The final database of this part of the project that is used in the machine learning part is located [here](https://github.com/guilhermehge/modeling-and-analyses-DS/blob/main/classification/mba_thesis/data_cleaning_and_modeling/final_modeling/SRAG_2020_2021_semignonull.csv).**_
+
 #### [final_modeling](https://github.com/guilhermehge/modeling-and-analyses-DS/blob/main/classification/mba_thesis/data_cleaning_and_modeling/final_modeling) (machine learning)
 
 Notebook in question: [auto_ml_modeling.ipynb](https://github.com/guilhermehge/modeling-and-analyses-DS/blob/main/classification/mba_thesis/data_cleaning_and_modeling/final_modeling/auto_ml_modeling.ipynb)
@@ -193,6 +195,8 @@ Os resultados do modelo foram:
 * F1: 0,66
 
 Resultados próximos ao da árvore de decisão. Como a árvore é um modelo com melhor interpretabilidade, é preferível frente a regressão logística do ponto de vista de negócio.
+
+_**O banco de dados final dessa parte do projeto que é usado na parte de aprendizado de máquina está localizado [aqui](https://github.com/guilhermehge/modeling-and-analyses-DS/blob/main/classification/mba_thesis/data_cleaning_and_modeling/final_modeling/SRAG_2020_2021_semignonull.csv).**_
 
 #### Modelagens Finais (aprendizado de máquina)
 
