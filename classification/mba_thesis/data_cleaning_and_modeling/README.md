@@ -79,7 +79,7 @@ The variable "suporte_vent_Invasivo (Invasive ventilatory support)" is the most 
 
 I then tried to change the model's cut-off point, but the results did not change much.
 
-**Regressão Logística**
+**Logistic Regression**
 
 The logistic regression provides the coefficients of each variable inserted in the model, so we can use the logistic regression equation to determine the chance of death of a patient. The coefficients obtained with the tuned model can be seen in the presentation [TCC-FIA-GuilhermeElias.pptx](https://github.com/guilhermehge/modeling-and-analyses-DS/blob/main/classification/mba_thesis/presentation_pptx/TCC-FIA-GuilhermeElias.pptx).
 
