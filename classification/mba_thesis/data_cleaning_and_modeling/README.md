@@ -105,7 +105,7 @@ I choose to use the AutoML technique, i.e. _Auto Machine Learning_ with the PyCa
 
 The first result of the model in the validation database is as follows:
 
-<img src="automl_result1.png" width="50%" height="100%">
+![automl_result1](automl_result1.png)
 
 The model chosen for tuning is LightGBM, since it already shows solid results being _baseline_.
 
@@ -132,7 +132,7 @@ We can see that the results are not very different from the decision tree.
 
 The shapley of the model was:
 
-<img src="shapley_lgbm.png" width="40%" height="100%">
+![shapley_lgbm](shapley_lgbm.png)
 
 We can see that the top three variables are: use of invasive ventilatory support, ICU stay and elderly over 75, which corroborates the previous results from the statistical modeling stage.
 
@@ -140,7 +140,7 @@ I then tried the CatBoost model and also some treatments such as feature selecti
 
 As we can see in the image of the results above, we have several models that could also be used, as they also had good results, such as CatBoost, XGBoost, Gradient Boosting Classifier, Logistic Regression, among others. In order to take advantage of the results of these models, I chose to make a Voting Classifier with the 5 best models using the _soft_ voting method, as shown in the image below:
 
-<img src="voting_classifier1.png" width="50%" height="100%">
+![voting_classifier1](voting_classifier1.png)
 
 After tuning the Voting Classifier, part of the hyperparameters of the final model were:
 
@@ -191,7 +191,7 @@ We see that there is an improvement in accuracy, specificity, precision and F1 a
 
 As a final attempt at improvement, I set up the classifier by vote now using 13 of the 15 PyCaret models, as shown in the image below:
 
-<img src="voting_classifier2.png" width="50%" height="100%">
+![voting_classifier2](voting_classifier2.png)
 
 However, there was no improvement in the results, which remained the same as the 5-model classifier.
 
@@ -237,7 +237,7 @@ The decision tree model is the best one to use on this occasion, as it provides 
 
 Below are side-by-side graphs of the metrics for each of the models. It can be seen that there is no gain in the metrics that would justify using a black box model for the proposed work, since the decision tree, in addition to good metrics, also provides the visualization of the tree.
 
-<img src="final_results_en.png" width="50%" height="100%">
+![final_results_en](final_results_en.png)
 
 # Versão em Português
 
@@ -346,7 +346,7 @@ Opto por fazer uso da técnica de AutoML, ou seja, _Auto Machine Learning_ com a
 
 O primeiro resultado do modelo na base de validação é o seguinte:
 
-<img src="automl_result1.png" width="50%" height="100%">
+![automl_result1](automl_result1.png)
 
 O modelo escolhido para tuning é o LightGBM, uma vez que já apresenta resultados sólidos sendo _baseline_.
 
@@ -373,7 +373,7 @@ Vemos que os resultados não são muito diferentes da árvore de decisão.
 
 O shapley do modelo foi:
 
-<img src="shapley_lgbm.png" width="40%" height="100%">
+![shapley_lgbm](shapley_lgbm.png)
 
 Vemos que as top 3 variáveis são: uso de suporte ventilatório invasivo, internação em UTI e idosos acima de 75 anos, o que corrobora com os resultados anteriores da etapa de modelagem estatística.
 
@@ -381,7 +381,7 @@ Em seguida eu tentei o modelo CatBoost e também tentei fazer alguns tratamentos
 
 Como podemos ver na imagem dos resultados anterior, temos diversos modelos que também poderiam ser utilizados, já que também tiveram bons resultados, como CatBoost, XGBoost, Gradient Boosting Classifier, Regressão Logística, entre outros. De modo a aproveitar os resultados destes modelos, optei por fazer um Classificador por Votação com 5 melhores modelos utilizando o método _soft_ de votação, conforme a imagem abaixo:
 
-<img src="voting_classifier1.png" width="50%" height="100%">
+![voting_classifier1](voting_classifier1.png)
 
 Após fazer o tuning dos Classificador por Votação, parte dos hiperparâmetros do modelo final foram:
 
@@ -432,7 +432,8 @@ Os resultados obtidos foram:
 
 Como tentativa final de melhoria, montei o classificador por votação agora utilizando 13 dos 15 modelos do PyCaret, conforme a imagem abaixo:
 
-<img src="voting_classifier2.png" width="50%" height="100%">
+
+![voting_classifier2](voting_classifier2.png)
 
 Entretanto, não houve nenhuma melhora dos resultados, permanecendo os mesmos do classificador com 5 modelos.
 
@@ -478,6 +479,6 @@ O modelo de árvore de decisão é o melhor a ser utilizado nesta ocasião, uma 
 
 Abaixo seguem os gráficos, lado a lado, das métricas de cada um dos modelos. Observa-se que não há ganho nas métricas que justifiquem utilizar um modelo caixa preta para o trabalho proposto, já que a árvore de decisão, além de boas métricas, ainda possui a visualização do modelo.
 
-<img src="final_results_pt.png" width="50%" height="100%">
+![final_results_pt](final_results_pt.png)
 
 
